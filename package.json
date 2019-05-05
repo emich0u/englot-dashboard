@@ -1,0 +1,34 @@
+{
+  "name": "pfa-g.patisserie",
+  "version": "1.0.0",
+  "description": "e-commerce website ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client-install": "npm install --prefix client",
+    "admin-install": "npm install -prefix admin",
+    "client": "npm start --prefix client",
+    "admin": "npm start --prefix admin",
+    "dev": "concurrently \"npm run server\" \"npm run client \" ",
+    "admindev": "concurrently \"npm run server\" \"npm run admin \""
+  },
+  "author": "Amine",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-lottie": "^1.2.3",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
